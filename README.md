@@ -1,6 +1,8 @@
 "# UE_FromSource" 
 
-This repository contains scripts and tools to help with building Unreal Engine from source code.
+This repository contains documentation, scripts and tools to help with building Unreal Engine from source code.
+
+Please have a look at the `docs` folder for more information.
 
 It also contains a tool that checks if all required tools are installed on your system, and creates a batch file to to package a UE4 project for distribution.
 
