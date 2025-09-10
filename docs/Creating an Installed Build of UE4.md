@@ -47,8 +47,9 @@ Find the section for VSCompilerArg and add the line for VS 2022\.
 
 This command will start the build process for Windows, Linux, and Android, and place the output in the specified directory.
 
-
-Engine\\Build\\BatchFiles\\RunUAT.bat BuildGraph \-script="Engine/Build/InstalledEngineBuild.xml" \-target="Make Installed Build Win64" \-set:WithWin64=true \-set:WithLinux=true \-set:WithAndroid=true \-set:WithMac=false \-set:WithIOS=false \-set:WithTVOS=false \-set:WithHoloLens=false \-Install="P:\\temp\\UE4\_27\_Installed"
+```
+Engine\Build\BatchFiles\RunUAT.bat BuildGraph -target="Make Installed Build Win64" -script="Engine/Build/InstalledEngineBuild.xml" -clean -set:WithWin64=true -set:WithAndroid=true -set:WithLinux=true -set:WithWin32=false -set:WithMac=false -set:WithIOS=false -set:WithTVOS=false -set:WithLinuxAArch64=false -set:WithLumin=false -set:WithLuminMac=false -set:WithHoloLens=false
+```
 
 Run this command in a Visual Studio 2022 Developer Command Prompt. It takes a while to complete, but it will eventually create a fully installed build of the engine in the specified directory.
 
